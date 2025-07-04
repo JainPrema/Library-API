@@ -1,4 +1,7 @@
 package com.ecommerce.libraryapi.repository;
 
-public interface BookRepository {
+import com.ecommerce.libraryapi.model.Book;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface BookRepository extends JpaRepository<Book, Long> {
 }
